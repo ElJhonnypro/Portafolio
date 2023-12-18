@@ -76,13 +76,13 @@ header .navbar ul .links a:hover{
 header .navbar ul .links a:hover::before {
     content: "";
     width: 100%;
-    height: 2px;
+    height: 0.2vh;
     position: absolute;
     border-radius: 25px;
     bottom: 0;
     left: 50%;transform: translateX(-50%);
     transition: all 0.5s;
-    background-color: rgb(67, 161, 255);
+    background-color: rgb(0, 0, 0);
     -webkit-border-radius: 25px;
     -moz-border-radius: 25px;
     -ms-border-radius: 25px;
@@ -92,7 +92,7 @@ header .navbar ul .links a:hover::before {
 header .navbar ul .links a::before {
     content: "";
     width: 0;
-    height: 2px;
+    height: 0.2vh;
     position: absolute;
     bottom: 0;
     border-radius: 25px;
@@ -100,6 +100,10 @@ header .navbar ul .links a::before {
     transform: translateX(-50%);
     transition: all 0.5s;
     background-color: black;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
 }
 header .navbar ul .links{
     display: flex;
@@ -189,6 +193,42 @@ text-shadow:10px 10px .15em rgb(205, 41, 41);
     color:white;
 }
 
-.footer{
-    height: 50vh;
+.instagramlogo{
+    width: 4vh;
+    text-align: center;
 }
+
+.discordlogo{
+    width: 4vh;
+}
+.discordbackground{
+    background: linear-gradient(135deg, #5865F2, #7587DA, #9B9ED4, #B4BBCB);
+}
+
+.footer{
+    padding: 25px;
+    min-height: 15vh;
+    background-color: rgb(255, 255, 255);
+}
+
+.footer .link{
+text-align: center;
+display: flex;
+padding: 25px;
+color:white;
+margin-top: 5px;
+gap: 0.9vh;
+text-decoration: none;
+align-items: center;
+justify-content: center;
+
+}
+
+.instagrambackground{
+    background: linear-gradient(45deg, #405DE6, #5851DB, #833AB4, #C13584, #FD1D1D, #F56040, #F77737, #FCAF45);
+}
+
+.footer .creditos{
+    text-align: center;
+}
+
