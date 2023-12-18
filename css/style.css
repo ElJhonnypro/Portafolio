@@ -188,3 +188,7 @@ text-shadow:10px 10px .15em rgb(205, 41, 41);
 .whitecolor{
     color:white;
 }
+
+.footer{
+    height: 50vh;
+}
