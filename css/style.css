@@ -71,12 +71,11 @@ header .navbar ul .links a:hover{
     -moz-transition: all .5s;
     -ms-transition: all .5s;
     -o-transition: all .5s;
-
 }
 header .navbar ul .links a:hover::before {
     content: "";
     width: 100%;
-    height: 0.2vh;
+    height: 2px;
     position: absolute;
     border-radius: 25px;
     bottom: 0;
@@ -92,7 +91,7 @@ header .navbar ul .links a:hover::before {
 header .navbar ul .links a::before {
     content: "";
     width: 0;
-    height: 0.2vh;
+    height: 2px;
     position: absolute;
     bottom: 0;
     border-radius: 25px;

@@ -12,7 +12,7 @@ instagramlogo.addEventListener('mouseout', ( event )=>{
 let discordlogo = document.getElementById('discordlink')
 
 discordlogo.addEventListener('mouseover', ( event )=>{
-    event.target.innerHTML = 'Discord<img src="discord.png" class="instagramlogo">'
+    event.target.innerHTML = 'Discord: hatbax (In friends)<img src="discord.png" class="instagramlogo">'
     })
     
     discordlogo.addEventListener('mouseout', ( event )=>{
