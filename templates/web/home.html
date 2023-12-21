@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Johnathan Portfolio</title>
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href={{ url_for('css', filename='style.css') }}>
 </head>
 
 <body>
@@ -13,7 +13,9 @@
         <nav class="navbar">
             <ul class="list">
                 <div class="logo">
-                    <img src="programadorlogo.png" alt="logo">
+                    <a href="/home">
+                        <img src={{ url_for('images', filename='programadorlogo.png') }} alt="logo">
+                    </a>
                 </div>
                 <div class="links">
                     <li><a href="#aboutme" class="link">About me</a></li>
@@ -40,32 +42,32 @@
 
             <div class="img_content">
                 <div class="imgdiv">
-                    <img src="htmlogo.png" alt="HTML Logo">
+                    <img src="{{ url_for('images', filename='htmlogo.png') }} " alt="HTML Logo">
                     <p>HTML</p>
                 </div>
 
                 <div class="imgdiv">
-                    <img src="csslogo.png" alt="CSS Logo">
+                    <img src={{ url_for('images', filename='csslogo.png') }}  alt="CSS Logo">
                     <p>CSS</p>
                 </div>
 
                 <div class="imgdiv">
-                    <img src="javascriptlogo.png" alt="JavaScript Logo">
+                    <img src={{ url_for('images', filename='javascriptlogo.png') }} alt="JavaScript Logo">
                     <p>JavaScript</p>
                 </div>
 
                 <div class="imgdiv">
-                    <img src="pythonlogo.png" alt="Python logo">
+                    <img src={{ url_for('images', filename='pythonlogo.png') }}  alt="Python logo">
                     <p>Python (Senior)</p>
                 </div>
                 <div class="imgdiv">
-                    <img src="vbalogo.png" alt="VBS LOGO">
+                    <img src={{ url_for('images', filename='vbalogo.png') }}  alt="VBS LOGO">
                     <p>Visual Basic (Basic)</p>
                 </div>
 
                 <div class="imgdiv">
-                    <img src="linuxlogo.png" alt="Linux LOGO">
-                    <p>Linux terminals (Medium)</p>
+                    <img src={{ url_for('images', filename='linuxlogo.png') }}  alt="Linux LOGO">
+                    <p>Linux terminals (Medium, bash, zsh, sysadmin)</p>
                 </div>
 
             </div>

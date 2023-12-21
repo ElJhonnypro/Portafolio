@@ -27,9 +27,9 @@ header {
 
 header .navbar ul {
     display: flex;
-    gap: 0.2em;
+    gap: 0;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-between;
     list-style: none;
 
 }
@@ -112,7 +112,7 @@ header .navbar ul .links a::before {
 
 header .navbar ul .links {
     display: flex;
-    gap: 0.5em;
+    gap: 4vh;
 }
 
 @media screen and (max-width:500px) {
@@ -147,6 +147,7 @@ h3 {
 
 .module .content_text .titletext {
     color: rgb(255, 255, 255);
+    font-size: 5vh;
 }
 
 .module .imgdiv img {
@@ -185,7 +186,11 @@ p {
 }
 
 .aboutme {
-    background-image: linear-gradient(25deg, red, blue)
+    background-image: linear-gradient(25deg, rgb(255, 0, 0), rgb(0, 0, 255))
+}
+
+.aboutme p {
+    font-size: 3vh;
 }
 
 .textshadowred {
