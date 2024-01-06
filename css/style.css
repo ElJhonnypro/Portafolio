@@ -11,8 +11,8 @@ html {
     font-family: 'Lato', sans-serif;
 }
 
-::-webkit-scrollbar {
-    display: none;
+::-webkit-scrollbar-button {
+    border-radius: 50px;
 }
 
 body {
@@ -124,6 +124,8 @@ header .navbar ul .links {
 .module {
     min-height: 50vh;
     display: flex;
+    overflow-y: hidden;
+    overflow-x: auto;
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -145,18 +147,42 @@ h3 {
     font-weight: 100;
 }
 
-.module .content_text .titletext {
+.content_text .titletext {
     color: rgb(255, 255, 255);
     font-size: 5vh;
+    text-align: center;
 }
 
 .module .imgdiv img {
     width: 20vh;
     transition: all .5s;
+
     -webkit-transition: all .5s;
     -moz-transition: all .5s;
     -ms-transition: all .5s;
     -o-transition: all .5s;
+}
+
+.logogirar {
+    animation-name: LogoGirar;
+    animation-iteration-count: infinite;
+    animation-duration: 2.1s;
+    animation-timing-function: linear;
+}
+
+.redondeado {
+    border-radius: 100%;
+}
+
+@keyframes LogoGirar {
+    from {
+        transform: rotateZ(0deg);
+
+    }
+
+    to {
+        transform: rotateZ(360deg);
+    }
 }
 
 .module .imgdiv img:hover {
@@ -170,6 +196,7 @@ h3 {
 
 .module .img_content img {
     margin: 0.5em;
+
 }
 
 .module .img_content {
@@ -239,4 +266,242 @@ p {
 
 .footer .creditos {
     text-align: center;
+}
+
+
+/* Ejemplos */
+
+.ejemplos {
+    background-color: rgb(255, 101, 44);
+    padding: 25px;
+
+}
+
+
+.ejemplos .navbar1 ul {
+    display: flex;
+    text-align: center;
+    list-style: none;
+    gap: 0;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+}
+
+
+.ejemplos .navbar1header {
+    box-shadow: 0 0 15px rgb(255, 255, 255);
+}
+
+.ejemplos .navbar1 ul .links {
+    display: flex;
+    list-style: none;
+    gap: 1.5vh;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-wrap: wrap;
+
+}
+
+@media (max-width:600px) {
+    .ejemplos .navbar1 ul {
+        display: flex;
+        list-style: none;
+        gap: 1.5vh;
+        align-items: center;
+        justify-content: center !important;
+        text-align: center;
+        flex-wrap: wrap;
+
+    }
+
+
+}
+
+
+.ejemplos .navbar1 ul .links a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-weight: bold;
+    transition: all .5s;
+    position: relative;
+    font-size: 2.2vh;
+
+
+}
+
+.ejemplos .navbar1 ul .links a:hover {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 2.4vh;
+    transition: all .5s;
+
+
+}
+
+.ejemplos .navbar1 ul .links a::before {
+    position: absolute;
+    content: "";
+    width: 0%;
+    bottom: 0;
+    left: 50%;
+    transition: all .5s;
+    height: 2px;
+    background-color: black;
+}
+
+.ejemplos .navbar1 ul .links a:hover::before {
+    width: 100%;
+    left: 0;
+    transition: all .5s;
+}
+
+
+.ejemplos .navbar1 .logo img {
+    width: 13vh !important;
+    transition: all .5s;
+
+}
+
+.navbar1effect {
+
+    animation-iteration-count: 1;
+    animation-duration: .5s;
+    animation-name: Logo;
+    text-align: center;
+    animation-timing-function: linear;
+}
+
+@keyframes Logo {
+    from {
+        transform: rotateZ(15deg);
+    }
+
+    to {
+        transform: rotateZ(360deg);
+    }
+}
+
+
+.ejemplos .navbar1 .logo img:hover {
+    width: 13.5vh !important;
+    transition: all .5s;
+}
+
+/*Navbar 2*/
+
+
+.ejemplos .navbar2 ul {
+    display: flex;
+    text-align: center;
+    list-style: none;
+    gap: 0;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+}
+
+.navbar2header {
+    background-color: white;
+    box-shadow: 0 0 10px #ffff;
+
+}
+
+.ejemplos .navbar2 ul .links a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-weight: bold;
+    transition: all .5s;
+    position: relative;
+    font-size: 2.2vh;
+
+
+}
+
+.ejemplos .navbar2 ul .links {
+    display: flex;
+    list-style: none;
+    gap: 1.5vh;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-wrap: wrap;
+
+}
+
+@media (max-width:600px) {
+    .ejemplos .navbar2 ul {
+        display: flex;
+        list-style: none;
+        gap: 1.5vh;
+        align-items: center;
+        justify-content: center !important;
+        text-align: center;
+        flex-wrap: wrap;
+
+    }
+
+
+}
+
+.ejemplos .navbar2 ul .links a:hover {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 2.4vh;
+    transition: all .5s;
+
+
+}
+
+
+.ejemplos .navbar2 ul .links a::before {
+    position: absolute;
+    content: "";
+    width: 0%;
+    bottom: 0;
+    left: 50%;
+    transition: all .5s;
+    height: 2px;
+    background-color: black;
+}
+
+.ejemplos .navbar2 ul .links a:hover::before {
+    width: 100%;
+    left: 0;
+    transition: all .5s;
+}
+
+
+.ejemplos .navbar2 .logo img {
+    width: 13vh !important;
+    transition: all .5s;
+}
+
+.navbar2effect {
+    animation-iteration-count: 1;
+    animation-duration: .5s;
+    animation-name: Logo2;
+    text-align: center;
+    animation-timing-function: linear;
+}
+
+@keyframes Logo2 {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+
+.ejemplos .navbar2 .logo img:hover {
+    width: 13.5vh !important;
+    transition: all .5s;
 }

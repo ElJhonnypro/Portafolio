@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Johnathan Portfolio</title>
-    <link rel="stylesheet" href={{ url_for('css', filename='style.css') }}>
+    <link rel="stylesheet" href={{ url_for('css', filename='style.css' ) }}>
+    <link rel="icon" href={{url_for('images', filename='favicon-32x32.ico' )}} type="image/x-icon">
 </head>
 
 <body>
@@ -13,8 +14,8 @@
         <nav class="navbar">
             <ul class="list">
                 <div class="logo">
-                    <a href="/home">
-                        <img src={{ url_for('images', filename='programadorlogo.png') }} alt="logo">
+                    <a href="/">
+                        <img src={{ url_for('images', filename='programadorlogo.png' ) }} alt="logo">
                     </a>
                 </div>
                 <div class="links">
@@ -47,26 +48,31 @@
                 </div>
 
                 <div class="imgdiv">
-                    <img src={{ url_for('images', filename='csslogo.png') }}  alt="CSS Logo">
+                    <img src={{ url_for('images', filename='csslogo.png' ) }} alt="CSS Logo">
                     <p>CSS</p>
                 </div>
 
                 <div class="imgdiv">
-                    <img src={{ url_for('images', filename='javascriptlogo.png') }} alt="JavaScript Logo">
+                    <img src={{ url_for('images', filename='javascriptlogo.png' ) }} alt="JavaScript Logo">
                     <p>JavaScript</p>
                 </div>
 
                 <div class="imgdiv">
-                    <img src={{ url_for('images', filename='pythonlogo.png') }}  alt="Python logo">
+                    <img src={{ url_for('images', filename='pythonlogo.png' ) }} alt="Python logo">
                     <p>Python (Senior)</p>
                 </div>
                 <div class="imgdiv">
-                    <img src={{ url_for('images', filename='vbalogo.png') }}  alt="VBS LOGO">
+                    <img src={{ url_for('images', filename='vbalogo.png' ) }} alt="VBS LOGO">
                     <p>Visual Basic (Basic)</p>
+                </div>
+                <div class="imgdiv">
+                    <img class="logogirar redondeado" src={{ url_for('images', filename='react.png' ) }}
+                        alt="react LOGO">
+                    <p>React JS Junior</p>
                 </div>
 
                 <div class="imgdiv">
-                    <img src={{ url_for('images', filename='linuxlogo.png') }}  alt="Linux LOGO">
+                    <img src={{ url_for('images', filename='linuxlogo.png' ) }} alt="Linux LOGO">
                     <p>Linux terminals (Medium, bash, zsh, sysadmin)</p>
                 </div>
 
@@ -86,12 +92,58 @@
         </div>
 
     </div>
+
+    <div class="ejemplos">
+        <div class="content_text">
+            <h1 class="titletext">Ejemplos</h1>
+        </div>
+
+        <header class="navbar1header">
+            <nav class="navbar1" id="navbar1">
+                <ul class="list">
+                    <div class="logo">
+                        <a href="/">
+                            <img id="logonavbar1" src={{ url_for('images', filename='linuxlogo.png' ) }} alt="logo">
+                        </a>
+                    </div>
+                    <div class="links">
+                        <li><a href="#" class="link">Quines somos</a></li>
+                        <li><a href="#" class="link">Ejemplo 2</a></li>
+                        <li><a href="#" class="link">Ejemplo 3</a></li>
+                    </div>
+                </ul>
+            </nav>
+        </header>
+
+        <button id="prueba1">probar el primer navbar</button>
+
+        <header class="navbar2header">
+            <nav class="navbar2" id="navbar2">
+                <ul class="list">
+                    <div class="logo">
+                        <a href="/">
+                            <img id="logonavbar2" src={{ url_for('images', filename='linuxlogo.png' ) }} alt="logo">
+                        </a>
+                    </div>
+                    <div class="links">
+                        <li><a href="#" class="link">Quines somos</a></li>
+                        <li><a href="#" class="link">Ejemplo 2</a></li>
+                        <li><a href="#" class="link">Ejemplo 3</a></li>
+                    </div>
+                </ul>
+            </nav>
+        </header>
+
+        <button id="prueba2">probar el segundo navbar</button>
+    </div>
+
     <div class="footer" id="information">
         <div class="links">
-            <a class="link instagrambackground" id="instagramlink" href="https://www.instagram.com/jotaa_py/"><img
-                    src="instagram.png" class="instagramlogo"></a>
-            <a class="link discordbackground" id="discordlink" href="#information"><img src="discord.png"
-                    class="discordlogo"></a>
+            <a target="_blank" class="link instagrambackground" id="instagramlink"
+                href="https://www.instagram.com/jotaa_py/"><img src={{ url_for('images', filename='instagram.png' ) }}
+                    class="instagramlogo"></a>
+            <a target="_blank" class="link discordbackground" id="discordlink" href="#information"><img src={{
+                    url_for('images', filename='discord.png' ) }} class="discordlogo"></a>
         </div>
         <div class="creditos">
             <p>Created by Jhonathan in 2023 </p>
@@ -100,7 +152,7 @@
     <!-- 
     Firma de Jhonathan. o de spawl (> O)
  -->
-    <script src="javascript/main.js"></script>
+    <script src={{ url_for('js', filename='main.js' ) }}></script>
 </body>
 
 </html>
